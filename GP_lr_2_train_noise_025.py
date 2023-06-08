@@ -88,7 +88,7 @@ def optim_hyperparams_multiple_runs(init_params_list, data_X, data_y, gp, maxite
   return optim_res_list, log_lik_history_list 
 def grid_search_initial():
   init_params_list = []
-  init_params = [1.e-3,1.e-2,1.e-1,0.1,10,100]
+  init_params = [1.e-3,1.e-2,1.e-1,1,10,100]
   for i in init_params:
     for j in init_params:
       for k in init_params:
