@@ -69,8 +69,8 @@ y_pred_1 = gp.predict_mean(
               X = np.array(T),     # set to observed x
               y = np.array(Y_nl[:,0]),       # set to observed y
               size=1,    # draw 100 posterior samples 
-              theta=[para_nonlinear_1.x[0],para_nonlinear_1.x[1]],
-              sigma=para_nonlinear_1.x[2]
+              theta=[para_nonlinear_1[0],para_nonlinear_1[1]],
+              sigma=para_nonlinear_1[2]
               )
 y_pred_2 = gp.predict_mean(
               x_star=np.arange(0,10,0.1),  # set to test points
