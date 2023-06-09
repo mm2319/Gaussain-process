@@ -41,7 +41,7 @@ para_lorenz_3 =np.load('gp_001_para_lr_3.npy')
 T, Y_tc = create_data_twocompart(p=0.01)
 Y_compart = []
 y_pred_1 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_tc[:,0]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -49,7 +49,7 @@ y_pred_1 = gp.predict_mean(
               sigma=para_two_compart_1[2]
               )
 y_pred_2 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_tc[:,1]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -65,7 +65,7 @@ Y_compart = np.array(Y_compart).T
 T, Y_nl = create_data_nonlinear(p=0.01)
 Y_nonlinear = []
 y_pred_1 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_nl[:,0]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -73,7 +73,7 @@ y_pred_1 = gp.predict_mean(
               sigma=para_nonlinear_1[2]
               )
 y_pred_2 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_nl[:,1]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -89,7 +89,7 @@ Y_nonlinear = np.array(Y_nonlinear).T
 T, Y_lr = create_data_lorenz(p=0.01)
 Y_lorenz = []
 y_pred_1 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_lr[:,0]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -97,7 +97,7 @@ y_pred_1 = gp.predict_mean(
               sigma=para_lorenz_1[2]
               )
 y_pred_2 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_lr[:,1]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -105,7 +105,7 @@ y_pred_2 = gp.predict_mean(
               sigma=para_lorenz_2[2]
               )
 y_pred_3 = gp.predict_mean(
-              x_star=np.arange(0,10,0.1),  # set to test points
+              x_star=np.arange(0,10,0.01),  # set to test points
               X = np.array(T),     # set to observed x
               y = np.array(Y_lr[:,2]),       # set to observed y
               size=1,    # draw 100 posterior samples 
@@ -120,10 +120,10 @@ print("$"*25)
 print("for the continuous spike and slab prior")
 print("$"*25)
 
-result_1 = derivative.dxdt(Y_compart[:,0], np.arange(0,10,0.1), kind="finite_difference", k=2)
-result_2 = derivative.dxdt(Y_compart[:,1], np.arange(0,10,0.1), kind="finite_difference", k=2)
+result_1 = derivative.dxdt(Y_compart[:,0], np.arange(0,10,0.01), kind="finite_difference", k=2)
+result_2 = derivative.dxdt(Y_compart[:,1], np.arange(0,10,0.01), kind="finite_difference", k=2)
 
-x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_Two_compart( result_1, result_2, num_samples = 100, Y = Y_tc)
+x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_Two_compart( result_1, result_2, num_samples = 1000, Y = Y_tc)
 
 start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
 start_2,trace_2 = Bayesian_regression_conti_spike_slab(y_2_train,x_2_train,np.shape(x_1_train[0])[0])
@@ -134,10 +134,10 @@ print("the value of beta_1 in model_2 of two compartment model is",start_2['beta
 np.save('gpfd_BR_CSS_001_tc_1',start_1['beta_1'])
 np.save('gpfd_BR_CSS_001_tc_2',start_2['beta_1'])
 
-result_1 = derivative.dxdt(Y_nonlinear[:,0], np.arange(0,10,0.1), kind="finite_difference", k=2)
-result_2 = derivative.dxdt(Y_nonlinear[:,1], np.arange(0,10,0.1), kind="finite_difference", k=2)
+result_1 = derivative.dxdt(Y_nonlinear[:,0], np.arange(0,10,0.01), kind="finite_difference", k=2)
+result_2 = derivative.dxdt(Y_nonlinear[:,1], np.arange(0,10,0.01), kind="finite_difference", k=2)
 
-x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_NonLinear( result_1, result_2, num_samples = 100, Y = Y_nl)
+x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_NonLinear( result_1, result_2, num_samples = 1000, Y = Y_nl)
 
 start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
 start_2,trace_2 = Bayesian_regression_conti_spike_slab(y_2_train,x_2_train,np.shape(x_1_train[0])[0])
@@ -149,11 +149,11 @@ print("the value of beta_1 in model_2 of nonlinear compartment model is",start_2
 np.save('gpfd_BR_CSS_001_nl_1',start_1['beta_1'])
 np.save('gpfd_BR_CSS_001_nl_2',start_2['beta_1'])
 
-result_1 = derivative.dxdt(Y_lorenz[:,0], np.arange(0,10,0.1), kind="finite_difference", k=2)
-result_2 = derivative.dxdt(Y_lorenz[:,1], np.arange(0,10,0.1), kind="finite_difference", k=2)
-result_3 = derivative.dxdt(Y_lorenz[:,2], np.arange(0,10,0.1), kind="finite_difference", k=2)
+result_1 = derivative.dxdt(Y_lorenz[:,0], np.arange(0,10,0.01), kind="finite_difference", k=2)
+result_2 = derivative.dxdt(Y_lorenz[:,1], np.arange(0,10,0.01), kind="finite_difference", k=2)
+result_3 = derivative.dxdt(Y_lorenz[:,2], np.arange(0,10,0.01), kind="finite_difference", k=2)
 
-x_1_train, y_1_train, x_2_train, y_2_train, x_3_train, y_3_train = obtain_train_data_Lorenz( result_1, result_2, result_3, num_samples = 100, y = Y_lr)
+x_1_train, y_1_train, x_2_train, y_2_train, x_3_train, y_3_train = obtain_train_data_Lorenz( result_1, result_2, result_3, num_samples = 1000, y = Y_lr)
 
 start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
 start_2,trace_2 = Bayesian_regression_conti_spike_slab(y_2_train,x_2_train,np.shape(x_1_train[0])[0])
