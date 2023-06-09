@@ -123,7 +123,7 @@ print("$"*25)
 result_1 = derivative.dxdt(Y_compart[:,0], np.arange(0,10,0.1), kind="finite_difference", k=2)
 result_2 = derivative.dxdt(Y_compart[:,1], np.arange(0,10,0.1), kind="finite_difference", k=2)
 
-x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_Two_compart( result_1, result_2, num_samples = 100, Y = Y_compart)
+x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_Two_compart( result_1, result_2, num_samples = 100, Y = Y_tc)
 
 start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
 start_2,trace_2 = Bayesian_regression_conti_spike_slab(y_2_train,x_2_train,np.shape(x_1_train[0])[0])
@@ -137,7 +137,7 @@ np.save('gpfd_BR_CSS_000_tc_2',start_2['beta_1'])
 result_1 = derivative.dxdt(Y_nonlinear[:,0], np.arange(0,10,0.1), kind="finite_difference", k=2)
 result_2 = derivative.dxdt(Y_nonlinear[:,1], np.arange(0,10,0.1), kind="finite_difference", k=2)
 
-x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_NonLinear( result_1, result_2, num_samples = 100, Y = Y_nonlinear)
+x_1_train, y_1_train, x_2_train, y_2_train  = obtain_train_data_NonLinear( result_1, result_2, num_samples = 100, Y = Y_nl)
 
 start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
 start_2,trace_2 = Bayesian_regression_conti_spike_slab(y_2_train,x_2_train,np.shape(x_1_train[0])[0])
@@ -153,7 +153,7 @@ result_1 = derivative.dxdt(Y_lorenz[:,0], np.arange(0,10,0.1), kind="finite_diff
 result_2 = derivative.dxdt(Y_lorenz[:,1], np.arange(0,10,0.1), kind="finite_difference", k=2)
 result_3 = derivative.dxdt(Y_lorenz[:,2], np.arange(0,10,0.1), kind="finite_difference", k=2)
 
-x_1_train, y_1_train, x_2_train, y_2_train, x_3_train, y_3_train = obtain_train_data_Lorenz( result_1, result_2, result_3, num_samples = 100, y = Y_lorenz)
+x_1_train, y_1_train, x_2_train, y_2_train, x_3_train, y_3_train = obtain_train_data_Lorenz( result_1, result_2, result_3, num_samples = 100, y = Y_lr)
 
 start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
 start_2,trace_2 = Bayesian_regression_conti_spike_slab(y_2_train,x_2_train,np.shape(x_1_train[0])[0])
