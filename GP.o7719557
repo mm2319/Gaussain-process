@@ -1,0 +1,231 @@
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+$$$$$$$$$$$$$$$$$$$$$$$$$
+for the continuous spike and slab prior
+$$$$$$$$$$$$$$$$$$$$$$$$$
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 3247 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 2569 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+the value of z_1 in model_1 of two compartment model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 7.80209527e+00,  2.44506633e-02,  1.09279478e+00,
+         -1.33679517e-01, -1.48760451e-02, -5.48544979e-01,
+         -4.65553252e-01, -1.25212948e-01]],
+
+       [[ 7.29622704e+00, -6.38588421e-01, -3.98675372e-01,
+         -2.40938833e-03,  4.62932265e-01, -8.93277241e-02,
+          6.02288418e-01, -3.37416802e-01]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of beta_1 in model_1 of two compartment model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 8)>
+array([[[ 1.04900856e+02,  3.26360180e-05, -7.99357313e-01,
+         -1.09916826e-02,  1.97706412e-03, -2.58983087e-04,
+         -1.51607644e+00,  1.05326520e-01]],
+
+       [[ 1.07512301e+02, -3.02340800e-02, -8.22367558e-01,
+         -1.10706793e-02,  2.03232034e-03, -2.55866365e-04,
+         -1.50757311e+00,  1.06227949e-01]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of z_1 in model_2 of two compartment model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[-0.67655791, -0.47587256,  0.68423016,  0.08229205,
+          0.19206425,  0.15967572, -0.21637924,  0.25523162]],
+
+       [[ 0.57140171,  0.5188796 ,  0.99756967, -0.02189627,
+         -0.41870491,  0.44345221,  0.75302368, -0.02009548]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of beta_1 in model_2 of two compartment model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 8)>
+array([[[ 3.38739646e-02,  2.34038942e+00,  1.63393281e+00,
+          2.01599485e-02, -7.36333431e-03,  1.25133955e-03,
+          4.74917222e-01, -2.28322173e-01]],
+
+       [[-1.59405566e+00,  1.97198469e+00,  1.28932444e+00,
+          1.62675936e-02, -7.25340396e-03,  1.13190943e-03,
+          6.16602747e-01, -1.88515446e-01]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 2084 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 2364 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+the value of z_1 in model_1 of nonlinear compartment model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 0.18316374,  0.02578767,  0.80401581, -0.1757844 ,
+         -1.78147198,  0.86895768,  0.21755379, -2.0659674 ]],
+
+       [[ 0.08254539,  0.40526713,  0.47490136, -0.15594916,
+          0.86078583,  1.51592724,  1.97156314,  0.60679974]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of beta_1 in model_1 of nonlinear compartment model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 8)>
+array([[[-9.74686188e-03, -1.51805165e-02,  1.95385381e+00,
+         -2.28002781e-01, -2.23200513e-02,  5.13895111e-04,
+         -2.81812281e-01,  4.73341600e-01]],
+
+       [[ 2.74504647e-02,  3.18985918e-04,  1.91106145e+00,
+         -3.10883407e-01,  4.33725014e-03,  2.43075680e-08,
+         -2.85449177e-01,  4.79545612e-01]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of z_1 in model_2 of nonlinear compartment model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 0.53596515,  0.53577895,  0.72878332, -0.0771384 ,
+          0.45446327,  0.09705565,  0.1962783 ,  0.25189338]],
+
+       [[ 0.26789812, -1.68285546, -0.59996395, -0.15805755,
+          0.00965912,  0.32858092,  0.91898051,  1.16909936]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of beta_1 in model_2 of nonlinear compartment model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 8)>
+array([[[-1.57771415e-02, -1.69899485e+00, -8.67632278e-03,
+          1.04131144e-01,  5.41687096e-03,  2.92576084e-08,
+         -4.15195358e-01,  6.60554355e-02]],
+
+       [[ 5.67731144e-04, -1.65275048e+00,  1.46955191e-07,
+          1.11708815e-01, -2.14705374e-02,  5.92747496e-07,
+         -4.43322686e-01,  6.46647020e-02]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 2911 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 3190 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 4427 seconds.
+the value of z_1 in model_1 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[ 2.76245283,  2.18076546,  1.15310674, -0.6063478 ,
+          1.04742875, -0.66252596,  0.35777915, -0.09736106,
+          0.88407162, -0.15747857,  2.12593748,  0.48031455,
+         -0.1460454 , -0.74414661,  0.86081012,  1.71303259,
+         -0.05847659]],
+
+       [[ 2.7542039 ,  3.19466437,  2.52879099, -0.64502894,
+         -0.07140535, -0.13421504,  0.51552943,  0.31082997,
+         -0.47490451,  0.50551725, -0.22339691,  1.40009061,
+         -2.87678003,  0.90680327, -0.16524194, -0.16480115,
+          1.42459912]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of beta_1 in model_1 of lorenz model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 17)>
+array([[[ 2.32686895e+01, -1.29908859e+01,  1.26088338e+01,
+         -2.39736375e+00, -1.14162798e-01, -1.59634321e-01,
+          5.27894664e-02,  4.16462049e-01,  1.06976394e-01,
+         -1.03540857e-01,  3.19679856e-03, -1.74057246e-03,
+          2.44115938e-04, -4.01650560e-03, -9.86845787e-05,
+          8.36361879e-06, -6.92927556e-06]],
+
+       [[ 2.15945608e+01, -1.27579866e+01,  1.24684681e+01,
+         -2.25019054e+00, -1.49261562e-01, -1.28149552e-01,
+          5.40861795e-02,  3.59334784e-01,  9.85371786e-02,
+         -9.15680290e-02,  2.64255149e-03, -1.90421906e-03,
+          1.21017021e-04, -3.53339154e-03,  3.02227776e-06,
+          1.51377570e-06, -5.17369605e-06]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of z_1 in model_2 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[ 0.98843981,  0.41506152,  1.53884364,  1.72178645,
+          0.37627953, -0.16282965,  0.28477258,  0.19496299,
+          1.73331821,  0.29038877, -0.05239858,  1.01814646,
+         -1.12007011,  0.55578374, -0.46919083, -1.16712823,
+         -1.94919173]],
+
+       [[ 0.88338984,  0.33264699,  1.78610104, -1.02644585,
+         -2.23981744, -0.3087964 ,  0.0969419 ,  0.32505591,
+         -2.06527799, -0.17427701,  0.32155989,  0.58776052,
+          0.07347841, -0.46832531, -0.81649182, -1.06107439,
+         -0.63264065]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of beta_1 in model_2 of lorenz model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 17)>
+array([[[-1.19520307e-04, -3.90141080e+00,  1.06594551e+01,
+          4.48748434e+00, -2.06080409e-01,  2.06048897e-01,
+         -4.33905902e-01, -5.40704154e-01, -7.25896697e-05,
+         -1.80661301e-01, -3.74375674e-02,  4.26721298e-03,
+          1.15888812e-02,  1.46657755e-02, -8.29893719e-06,
+          6.03855402e-05, -7.94472344e-05]],
+
+       [[ 2.85241017e-08, -2.94959137e+00,  1.00181295e+01,
+          4.49415486e+00, -2.18851280e-01,  3.24667898e-01,
+         -4.60541587e-01, -7.56520188e-01, -1.55750437e-04,
+         -1.54155942e-01, -4.13232891e-02,  3.03752121e-03,
+          1.29052493e-02,  1.86841731e-02, -1.51510244e-08,
+          2.39468823e-06, -9.56815747e-05]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of z_1 in model_3 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[ 0.3969725 ,  1.74708788, -0.88174565,  1.35369335,
+         -0.26977434,  0.6641428 ,  3.0138146 , -1.10838427,
+         -0.41820226,  0.0115896 , -0.42824253,  1.14567772,
+         -0.09412372, -1.23451404,  0.2764878 ,  0.16595407,
+         -0.51829919]],
+
+       [[-0.45910001,  1.45666084,  0.01001798, -0.987797  ,
+          0.19109429, -1.54494993,  0.56577133, -0.2305544 ,
+          0.22196858, -0.41280936, -0.10862484,  0.14694672,
+          0.43300832,  0.93081099,  0.01532949, -0.02864196,
+          2.55294536]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of beta_1 in model_3 of lorenz model is <xarray.DataArray 'beta_1' (chain: 2, draw: 1, beta_1_dim_0: 17)>
+array([[[-1.32447481e-02,  8.66504099e+00,  2.97872355e-05,
+         -3.37258172e+00,  4.72970569e-01,  5.82508484e-06,
+          3.24849057e-02,  1.32817496e+00, -3.40095236e-01,
+         -1.34837871e-01,  3.99548578e-02, -2.94600028e-03,
+         -9.48229806e-05, -2.63938302e-02,  4.86448249e-05,
+         -3.00277202e-04,  4.12549189e-12]],
+
+       [[-2.02101426e-01,  8.59326851e+00,  3.80167190e-03,
+         -3.47522250e+00,  4.55078746e-01, -1.30082741e-06,
+          3.19467864e-02,  1.39056113e+00, -3.35655947e-01,
+         -1.37048080e-01,  4.03109434e-02, -3.71769736e-03,
+          5.99106107e-07, -2.69343678e-02, -6.96128099e-07,
+         -3.37121875e-04,  1.53309145e-07]]])
+Coordinates:
+  * chain         (chain) int64 0 1
+  * draw          (draw) int64 999
+  * beta_1_dim_0  (beta_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16

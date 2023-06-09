@@ -1,0 +1,14 @@
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+$$$$$$$$$$$$$$$$$$$$$$$$$
+for the continuous spike and slab prior
+$$$$$$$$$$$$$$$$$$$$$$$$$
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 906 seconds.
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (2 chains in 1 job)
+NUTS: [sigma, z_1, lambda_hat, spike_raw]
+█

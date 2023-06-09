@@ -1,0 +1,16 @@
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/autograd/tracer.py:48: RuntimeWarning: covariance is not positive-semidefinite.
+  return f_raw(*args, **kwargs)
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+$$$$$$$$$$$$$$$$$$$$$$$$$
+for the discrete spike and slab prior
+$$$$$$$$$$$$$$$$$$$$$$$$$
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 648 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██

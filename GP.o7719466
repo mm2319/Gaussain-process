@@ -1,0 +1,471 @@
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/autograd/tracer.py:48: RuntimeWarning: covariance is not positive-semidefinite.
+  return f_raw(*args, **kwargs)
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+$$$$$$$$$$$$$$$$$$$$$$$$$
+for the discrete spike and slab prior
+$$$$$$$$$$$$$$$$$$$$$$$$$
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 1977 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 681 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+the value of z_1 in model_1 of twocompart model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 9.20520347e-01,  1.83365828e+00, -6.41739241e-02,
+         -1.62379000e-03,  1.78327247e-04, -5.95073014e-05,
+         -1.96264832e+00,  1.44641136e-02]],
+
+       [[ 4.18176065e-01,  1.82868276e+00, -6.21739474e-02,
+         -1.75069367e-03,  1.83952578e-04, -6.80306973e-05,
+         -1.96250814e+00,  1.55179809e-02]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_1 of twocompart model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[1, 1, 1, 1, 1, 1, 1, 1]],
+
+       [[0, 1, 1, 1, 1, 1, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of z_1 in model_2 of twocompart model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 1.22749448e+01, -1.43202350e-01,  2.83114908e+00,
+         -1.12264912e-03, -2.72440193e-01, -4.98145086e-01,
+          4.40054341e-02, -8.76650010e-02]],
+
+       [[ 1.61266957e+01, -1.83752862e-01,  2.81996692e+00,
+         -1.15469242e-03,  4.89782147e-01, -2.43243375e+00,
+          6.48548445e-02, -8.70144494e-02]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_2 of twocompart model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[1, 1, 1, 1, 0, 0, 1, 1]],
+
+       [[1, 1, 1, 1, 0, 0, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 1403 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 1082 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+the value of z_1 in model_1 of nonlinear model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[-1.85464923,  0.18374631, -0.72817033, -0.00486093,
+          0.30976368,  0.39791413, -0.10933532,  2.00182016]],
+
+       [[-0.67520362, -0.45533218,  0.77285919, -1.10879328,
+         -0.12093183, -0.26857308, -0.10748568,  1.99924868]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_1 of nonlinear model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[0, 0, 0, 1, 0, 0, 1, 1]],
+
+       [[0, 0, 0, 0, 0, 0, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of z_1 in model_2 of nonlinear model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 0.8662279 , -0.05925899, -0.99012927,  0.0074257 ,
+         -1.03337512, -0.22546617, -1.93637762, -0.09547297]],
+
+       [[ 0.35065824, -0.0579715 ,  0.0094857 ,  0.35293479,
+          0.00554749, -1.45550618, -1.93720115, -0.09631225]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_2 of nonlinear model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[0, 1, 0, 1, 0, 0, 1, 1]],
+
+       [[0, 1, 0, 0, 1, 0, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 679 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 813 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 1429 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+the value of z_1 in model_1 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[-1.87536943e+00, -9.52818828e+00,  9.86673360e+00,
+         -2.50896902e-01, -3.94754512e-03, -6.50344041e-03,
+         -1.00479114e+00,  1.05629053e-02, -1.57053734e-02,
+         -2.19085372e+00,  1.39268602e-03, -2.70189133e-04,
+          2.94818239e+00,  1.03406731e+00,  1.77286808e+00,
+         -4.45346135e-01,  2.37511239e-01]],
+
+       [[ 3.74890347e+00, -9.98816951e+00,  1.00337470e+01,
+         -4.55026728e-01, -5.79357806e-02, -1.17222566e-02,
+          1.29995836e-02,  5.26233138e-02, -5.35642787e-01,
+         -4.89707231e+00, -1.91787557e+00, -1.27498551e-04,
+         -2.00063518e+00, -1.15912138e+00,  3.11918005e-02,
+          9.63726640e-01,  1.80402980e-01]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_1 of lorenz model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 17)>
+array([[[0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0]],
+
+       [[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of z_1 in model_2 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[ 1.19686372e+00,  2.79999760e+01, -1.00566282e+00,
+         -6.68057314e+00, -2.07900408e-01, -1.59961518e-01,
+         -7.71372584e-02,  2.05749116e+00, -9.99760581e-01,
+          1.55524557e+00, -3.66742002e-01, -7.46552700e-01,
+         -3.66134220e-01, -3.93894184e-04,  5.65905731e-05,
+         -3.73944569e-01, -8.81221260e-01]],
+
+       [[ 1.06713240e+00,  2.79918144e+01, -1.01755801e+00,
+          5.86105345e-02, -1.24440169e-02,  1.58753730e+00,
+          2.33939299e+00,  3.08684439e-02, -9.98864388e-01,
+          2.83957031e-01,  2.24718759e+00, -1.23638397e-01,
+         -3.54044923e-01, -1.89211334e-03,  2.00869938e-04,
+          3.46542168e+00,  1.26548352e+00]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_2 of lorenz model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 17)>
+array([[[0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0]],
+
+       [[0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of z_1 in model_3 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[-7.23360222e+00, -3.17366037e+00, -2.10217627e+00,
+         -1.68767938e+00,  1.60094568e+00, -4.72577073e-02,
+         -4.40211229e-02,  1.13963358e+00,  7.03742669e-02,
+          2.41378419e+00,  1.95860202e+00,  2.37272487e-01,
+          6.62708109e-04, -3.01154383e-03, -2.51973987e-01,
+          2.70982597e-01,  1.48173935e-02]],
+
+       [[-1.20167574e+01, -9.12723435e-02, -7.26784292e-01,
+         -1.16270008e+00,  2.58927316e+00, -4.94665221e-02,
+         -4.90512633e-02,  1.15171717e+00, -9.41270209e-01,
+          2.16892093e-01,  5.47507237e-04,  2.01472883e-01,
+         -7.88043057e-01, -3.22421545e-03, -5.87442125e-01,
+          1.07635266e+00,  1.30878185e-05]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_3 of lorenz model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 17)>
+array([[[1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0]],
+
+       [[1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+$$$$$$$$$$$$$$$$$$$$$$$$$
+for the modified spike and slab prior
+$$$$$$$$$$$$$$$$$$$$$$$$$
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 2839 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 703 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+the value of z_1 in model_1 of twocompart model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 5.56777760e-01,  1.88231035e+00, -4.94984488e-02,
+         -1.17317173e-03,  9.13548839e-05, -4.23309030e-05,
+         -1.96768341e+00,  1.05541426e-02]],
+
+       [[ 1.65047923e-01,  1.82853354e+00, -5.79900184e-02,
+         -1.64286188e-03,  1.69395994e-04, -6.47891476e-05,
+         -1.95901735e+00,  1.46392633e-02]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_1 of twocompart model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 8)>
+array([[[0.51124454, 0.44329684, 0.31017171, 0.93708169, 0.63158874,
+         0.72882789, 0.7541807 , 0.4820941 ]],
+
+       [[0.58051354, 0.77383926, 0.51740455, 0.72829374, 0.85823431,
+         0.31639321, 0.9282941 , 0.3363669 ]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_1 of twocompart model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[1, 1, 1, 1, 1, 1, 1, 1]],
+
+       [[1, 1, 1, 1, 1, 1, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of z_1 in model_2 of twocompart model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[ 4.06504755e-01, -4.64752399e-01,  2.90304076e+00,
+          7.67121412e-01, -4.98972525e-04,  7.75184762e-06,
+          7.41186062e-02, -9.66540705e-02]],
+
+       [[ 3.18271679e+00, -3.78041250e-02,  2.83465945e+00,
+         -1.28989441e-03, -1.23413091e-01,  3.12469852e-01,
+         -9.10961149e-01, -8.69461555e-02]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_2 of twocompart model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 8)>
+array([[[0.16283292, 0.10620614, 0.47453241, 0.36333767, 0.46065404,
+         0.56740107, 0.63860684, 0.61412552]],
+
+       [[0.39079753, 0.87921756, 0.23382501, 0.56987511, 0.20554506,
+         0.25618875, 0.4076245 , 0.98553717]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_2 of twocompart model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[0, 0, 1, 0, 1, 1, 1, 1]],
+
+       [[1, 1, 1, 1, 0, 0, 0, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 610 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 930 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+the value of z_1 in model_1 of nonlinear model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[-1.04787224,  0.21851456, -0.52316729, -1.20124486,
+         -0.01579574, -0.54728599, -0.10715797,  1.99676618]],
+
+       [[ 0.83534795, -1.02942896, -0.21777161,  2.16725393,
+         -4.07545911,  0.01994222, -0.11636043,  1.99986221]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_1 of nonlinear model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 8)>
+array([[[0.08626509, 0.22714863, 0.00889657, 0.29020288, 0.4638902 ,
+         0.00766047, 0.63198834, 0.86401192]],
+
+       [[0.04063443, 0.38212212, 0.12401945, 0.17706734, 0.52236714,
+         0.56153074, 0.42045109, 0.82027092]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_1 of nonlinear model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[0, 0, 0, 0, 0, 0, 1, 1]],
+
+       [[0, 0, 0, 0, 0, 0, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of z_1 in model_2 of nonlinear model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 8)>
+array([[[-1.43828878e+00, -5.05905608e-02,  2.79292701e-01,
+         -4.87182399e-01, -1.21127205e-03,  1.17404304e+00,
+         -1.94207824e+00, -9.64058697e-02]],
+
+       [[ 2.20402253e+00, -7.50146397e-02,  2.74030874e-01,
+         -1.22763311e+00,  4.74769510e-01, -4.86875914e-01,
+         -1.93204913e+00, -9.35309089e-02]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_2 of nonlinear model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 8)>
+array([[[0.18279036, 0.96345803, 0.34379281, 0.30266131, 0.1710009 ,
+         0.16505687, 0.57069808, 0.55327055]],
+
+       [[0.09652295, 0.53522993, 0.08452497, 0.49950113, 0.51754449,
+         0.37133191, 0.38904155, 0.86143514]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7
+the value of pn_1 in model_2 of nonlinear model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 8)>
+array([[[0, 1, 0, 0, 1, 0, 1, 1]],
+
+       [[0, 1, 0, 0, 0, 0, 1, 1]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 934 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 515 seconds.
+Sequential sampling (2 chains in 1 job)
+CompoundStep
+>NUTS: [p_1, sigma, z_1]
+>BinaryGibbsMetropolis: [pn_1]
+██Sampling 2 chains for 6_000 tune and 1_000 draw iterations (12_000 + 2_000 draws total) took 2104 seconds.
+the value of z_1 in model_1 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[-1.52858601e+00, -1.03166553e+01,  1.01999111e+01,
+          3.44026380e-01, -9.40522058e-02, -2.34383048e-02,
+         -2.65909734e-02,  1.00502080e-01,  9.30341751e-03,
+         -6.09998525e-03, -2.96678165e-01, -4.85284313e-01,
+          6.69988660e-04,  1.37078714e+00, -7.21533027e-05,
+         -6.93091134e-01,  2.32397336e-01]],
+
+       [[ 3.69396640e+00, -9.99275884e+00,  1.00048324e+01,
+         -4.41582968e-01, -5.58163326e-02, -1.05395789e-02,
+          1.26339787e-02,  4.91978019e-02,  1.51709536e+00,
+         -7.98031507e-01, -1.80567836e+00, -1.72080082e+00,
+         -1.81986614e+00,  8.66723941e-01,  1.86387727e-01,
+         -7.80398748e-01, -4.62335482e-02]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_1 of lorenz model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 17)>
+array([[[0.80297501, 0.64362176, 0.41549474, 0.45132831, 0.89867354,
+         0.87754018, 0.89361105, 0.26279092, 0.99818598, 0.46800479,
+         0.0993039 , 0.18781976, 0.94295517, 0.36412869, 0.87528556,
+         0.03571327, 0.16569787]],
+
+       [[0.78447728, 0.36589932, 0.57649308, 0.97962829, 0.87672976,
+         0.42904471, 0.82124404, 0.22004778, 0.56853913, 0.56482328,
+         0.40145063, 0.42400906, 0.07444358, 0.58493743, 0.17628087,
+         0.39893554, 0.30547424]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_1 of lorenz model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 17)>
+array([[[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0]],
+
+       [[1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of z_1 in model_2 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[-1.31457887e+00,  2.81424210e+01, -1.07187959e+00,
+         -8.34171122e-01, -2.51398807e-04,  3.12364547e-01,
+         -7.86935656e-01, -4.25746175e-01, -1.00296929e+00,
+         -5.61438205e-01, -1.27677641e+00, -3.19166919e-01,
+          1.25806671e+00, -2.63791169e+00,  8.35612921e-01,
+          1.39288765e+00,  5.61280599e-01]],
+
+       [[-8.35183309e-03,  2.78946215e+01, -9.76254681e-01,
+         -3.67991233e+00,  2.44758585e-01, -1.96895068e+00,
+         -1.56723781e+00,  2.29134831e+00, -9.98402739e-01,
+          4.19637590e-01, -5.15618254e-01,  5.00017218e-01,
+          1.96352787e+00, -1.81707651e-01, -1.06043066e+00,
+         -1.10967559e+00,  1.20123982e+00]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_2 of lorenz model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 17)>
+array([[[0.06141163, 0.71397171, 0.97833376, 0.05106039, 0.7070186 ,
+         0.03316735, 0.04351041, 0.09460533, 0.72913329, 0.31407235,
+         0.57815715, 0.64271   , 0.09887689, 0.67388546, 0.62483405,
+         0.47286069, 0.4122544 ]],
+
+       [[0.63221231, 0.73408267, 0.71147574, 0.04872439, 0.1975321 ,
+         0.48915967, 0.05728952, 0.26406281, 0.82862799, 0.25177487,
+         0.33666105, 0.53148754, 0.00688776, 0.80403578, 0.03467864,
+         0.54261952, 0.30281966]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_2 of lorenz model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 17)>
+array([[[0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]],
+
+       [[1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of z_1 in model_3 of lorenz model is <xarray.DataArray 'z_1' (chain: 2, draw: 1, z_1_dim_0: 17)>
+array([[[-5.50813648e-01, -2.14224628e-01,  2.30229101e-01,
+         -3.51118540e+00,  1.04504817e+00, -1.69048712e+00,
+          1.17258742e-01,  9.97515927e-01,  8.36679376e-03,
+         -9.85657883e-01,  2.71204015e-01, -4.41443524e-02,
+         -4.94658240e-03,  3.32144491e-01,  7.90741208e-01,
+          2.42671084e+00,  6.47466561e-05]],
+
+       [[-1.69138056e+01,  6.81146025e-01, -8.56915657e-01,
+          1.27341726e+00, -8.86246258e-01, -1.33664089e-01,
+         -1.33230382e-01,  9.96818004e-01,  3.84814576e-01,
+         -1.75395037e+00, -3.76158867e-01, -5.00897683e-01,
+          2.08326362e-03,  1.94357329e-03, -3.93583338e-04,
+         -4.18715579e-01,  1.30772219e-01]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * z_1_dim_0  (z_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_3 of lorenz model is <xarray.DataArray 'p_1' (chain: 2, draw: 1, p_1_dim_0: 17)>
+array([[[0.13216974, 0.28491729, 0.83942344, 0.34247078, 0.27893036,
+         0.74834727, 0.84081235, 0.66281051, 0.66483021, 0.11419215,
+         0.74514685, 0.22415225, 0.6242884 , 0.20259198, 0.40606329,
+         0.57206293, 0.79556812]],
+
+       [[0.37150714, 0.31301308, 0.03728977, 0.41555862, 0.22890999,
+         0.12118842, 0.70004327, 0.77016539, 0.78693705, 0.03942282,
+         0.4027439 , 0.29730702, 0.92685481, 0.73644931, 0.92374667,
+         0.1064809 , 0.33543826]]])
+Coordinates:
+  * chain      (chain) int64 0 1
+  * draw       (draw) int64 999
+  * p_1_dim_0  (p_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+the value of pn_1 in model_3 of lorenz model is <xarray.DataArray 'pn_1' (chain: 2, draw: 1, pn_1_dim_0: 17)>
+array([[[0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1]],
+
+       [[1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0]]])
+Coordinates:
+  * chain       (chain) int64 0 1
+  * draw        (draw) int64 999
+  * pn_1_dim_0  (pn_1_dim_0) int64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16

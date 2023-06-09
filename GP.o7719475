@@ -1,0 +1,106 @@
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/autograd/tracer.py:48: RuntimeWarning: covariance is not positive-semidefinite.
+  return f_raw(*args, **kwargs)
+ERROR (pytensor.graph.rewriting.basic): Rewrite failure due to: constant_folding
+ERROR (pytensor.graph.rewriting.basic): node: InplaceDimShuffle{1,0}(TensorConstant{[[1.000000..3065e+04]]})
+ERROR (pytensor.graph.rewriting.basic): TRACEBACK:
+ERROR (pytensor.graph.rewriting.basic): Traceback (most recent call last):
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1933, in process_node
+    replacements = node_rewriter.transform(fgraph, node)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1092, in transform
+    return self.fn(fgraph, node)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/tensor/rewriting/basic.py", line 1141, in constant_folding
+    thunk = node.op.make_thunk(node, storage_map, compute_map, no_recycling=[])
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/op.py", line 131, in make_thunk
+    return self.make_c_thunk(node, storage_map, compute_map, no_recycling)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/op.py", line 96, in make_c_thunk
+    outputs = cl.make_thunk(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/basic.py", line 1202, in make_thunk
+    cthunk, module, in_storage, out_storage, error_storage = self.__compile__(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/basic.py", line 1122, in __compile__
+    thunk, module = self.cthunk_factory(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/basic.py", line 1647, in cthunk_factory
+    module = cache.module_from_key(key=key, lnk=self)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/cmodule.py", line 1197, in module_from_key
+    module = self._get_from_hash(module_hash, key)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/cmodule.py", line 1111, in _get_from_hash
+    self.check_key(key, key_data.key_pkl)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/cmodule.py", line 1306, in check_key
+    raise AssertionError(
+AssertionError: Key not found in unpickled KeyData file. Verify the __eq__ and __hash__ functions of your Ops. The file is: /rds/general/user/mm2319/home/.pytensor/compiledir_Linux-4.18-el8_5.x86_64-x86_64-with-glibc2.17-x86_64-3.8.10-64/tmp9sr8o3yc/key.pkl. The key is: ((('mc4165d4d1989b2cbb0f360acbcf92a5afb4aca7d59a69b75dd637ccc57f3c71b', ((3,), ((11, 13, '1.19.2'), (13, '1.19.2'), (11, 13, '1.19.2'), (11, 13, '1.19.2')))), ('input_broadcastable', 'new_order', 'inplace'), (11, 13, '1.19.2'), (11, 13, '1.19.2')), ('CLinker.cmodule_key', ('-DNPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION', '-O3', '-Wno-c++11-narrowing', '-Wno-unused-label', '-Wno-unused-variable', '-Wno-write-strings', '-fPIC', '-fno-asynchronous-unwind-tables', '-fno-exceptions', '-fno-math-errno', '-fno-unwind-tables', '-m64'), (), (), 'NPY_ABI_VERSION=0x1000009', 'c_compiler_str=/rds/general/user/mm2319/home/anaconda3/envs/M4R/bin/g++ 11.2.0', 'md5:m624562459f98c9fea8456c836a7c615e5d233a9e9905eebffeb353cd3b5f9076', (<pytensor.tensor.elemwise.DimShuffle object at 0x14dc7db02a60>, ((TensorType(float64, (100, 8)), (('m6d8d25233d6916f06f871e33bb1bb6c9a2999213f8993492e926d599ec7670a5', 0, 0), False)),), (1, (False,)))))
+
+$$$$$$$$$$$$$$$$$$$$$$$$$
+for the continuous spike and slab prior
+$$$$$$$$$$$$$$$$$$$$$$$$$
+Traceback (most recent call last):
+  File "Gaussian_FD_Baye_Reg_CSS_noise_001.py", line 128, in <module>
+    start_1,trace_1 = Bayesian_regression_conti_spike_slab(y_1_train,x_1_train,np.shape(x_1_train[0])[0])
+  File "/rds/general/user/mm2319/home/Gaussain-process/Bayesian_Regression_Cont_Spike_and_Slab.py", line 31, in Bayesian_regression_conti_spike_slab
+    trace_rh = pm.sample(1000, tune=6000, cores=1, random_seed=1, nuts={'target_accept':0.9})
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/sampling/mcmc.py", line 447, in sample
+    step = assign_step_methods(model, step, methods=pm.STEP_METHODS, step_kwargs=kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/sampling/mcmc.py", line 189, in assign_step_methods
+    return instantiate_steppers(model, steps, selected_steps, step_kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/sampling/mcmc.py", line 107, in instantiate_steppers
+    step = step_class(vars=vars, model=model, **args)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/step_methods/hmc/nuts.py", line 182, in __init__
+    super().__init__(vars, **kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/step_methods/hmc/base_hmc.py", line 109, in __init__
+    super().__init__(vars, blocked=blocked, model=self._model, dtype=dtype, **pytensor_kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/step_methods/arraystep.py", line 263, in __init__
+    func = model.logp_dlogp_function(vars, dtype=dtype, **pytensor_kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/model.py", line 648, in logp_dlogp_function
+    return ValueGradFunction(costs, grad_vars, extra_vars_and_values, **kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/model.py", line 389, in __init__
+    self._pytensor_function = compile_pymc(inputs, outputs, givens=givens, **kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pymc/pytensorf.py", line 1121, in compile_pymc
+    pytensor_function = pytensor.function(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/compile/function/__init__.py", line 315, in function
+    fn = pfunc(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/compile/function/pfunc.py", line 367, in pfunc
+    return orig_function(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/compile/function/types.py", line 1754, in orig_function
+    m = Maker(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/compile/function/types.py", line 1524, in __init__
+    self.prepare_fgraph(inputs, outputs, found_updates, fgraph, mode, profile)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/compile/function/types.py", line 1416, in prepare_fgraph
+    rewriter_profile = rewriter(fgraph)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 135, in __call__
+    return self.rewrite(fgraph)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 131, in rewrite
+    return self.apply(fgraph, *args, **kwargs)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 302, in apply
+    sub_prof = rewriter.apply(fgraph)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 2477, in apply
+    sub_prof = grewrite.apply(fgraph)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 2051, in apply
+    nb += self.process_node(fgraph, node)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1936, in process_node
+    self.failure_callback(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1789, in warn_inplace
+    return cls.warn(exc, nav, repl_pairs, node_rewriter, node)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1777, in warn
+    raise exc
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1933, in process_node
+    replacements = node_rewriter.transform(fgraph, node)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/graph/rewriting/basic.py", line 1092, in transform
+    return self.fn(fgraph, node)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/tensor/rewriting/basic.py", line 1141, in constant_folding
+    thunk = node.op.make_thunk(node, storage_map, compute_map, no_recycling=[])
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/op.py", line 131, in make_thunk
+    return self.make_c_thunk(node, storage_map, compute_map, no_recycling)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/op.py", line 96, in make_c_thunk
+    outputs = cl.make_thunk(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/basic.py", line 1202, in make_thunk
+    cthunk, module, in_storage, out_storage, error_storage = self.__compile__(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/basic.py", line 1122, in __compile__
+    thunk, module = self.cthunk_factory(
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/basic.py", line 1647, in cthunk_factory
+    module = cache.module_from_key(key=key, lnk=self)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/cmodule.py", line 1197, in module_from_key
+    module = self._get_from_hash(module_hash, key)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/cmodule.py", line 1111, in _get_from_hash
+    self.check_key(key, key_data.key_pkl)
+  File "/rds/general/user/mm2319/home/anaconda3/envs/M4R/lib/python3.8/site-packages/pytensor/link/c/cmodule.py", line 1306, in check_key
+    raise AssertionError(
+AssertionError: Key not found in unpickled KeyData file. Verify the __eq__ and __hash__ functions of your Ops. The file is: /rds/general/user/mm2319/home/.pytensor/compiledir_Linux-4.18-el8_5.x86_64-x86_64-with-glibc2.17-x86_64-3.8.10-64/tmp9sr8o3yc/key.pkl. The key is: ((('mc4165d4d1989b2cbb0f360acbcf92a5afb4aca7d59a69b75dd637ccc57f3c71b', ((3,), ((11, 13, '1.19.2'), (13, '1.19.2'), (11, 13, '1.19.2'), (11, 13, '1.19.2')))), ('input_broadcastable', 'new_order', 'inplace'), (11, 13, '1.19.2'), (11, 13, '1.19.2')), ('CLinker.cmodule_key', ('-DNPY_NO_DEPRECATED_API=NPY_1_7_API_VERSION', '-O3', '-Wno-c++11-narrowing', '-Wno-unused-label', '-Wno-unused-variable', '-Wno-write-strings', '-fPIC', '-fno-asynchronous-unwind-tables', '-fno-exceptions', '-fno-math-errno', '-fno-unwind-tables', '-m64'), (), (), 'NPY_ABI_VERSION=0x1000009', 'c_compiler_str=/rds/general/user/mm2319/home/anaconda3/envs/M4R/bin/g++ 11.2.0', 'md5:m624562459f98c9fea8456c836a7c615e5d233a9e9905eebffeb353cd3b5f9076', (<pytensor.tensor.elemwise.DimShuffle object at 0x14dc7db02a60>, ((TensorType(float64, (100, 8)), (('m6d8d25233d6916f06f871e33bb1bb6c9a2999213f8993492e926d599ec7670a5', 0, 0), False)),), (1, (False,)))))
