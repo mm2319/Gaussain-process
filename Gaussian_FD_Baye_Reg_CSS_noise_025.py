@@ -34,9 +34,9 @@ para_two_compart_1 = np.load('gp_025_para_tc_1.npy')
 para_two_compart_2 = np.load('gp_025_para_tc_2.npy')
 para_nonlinear_1  = np.load('gp_025_para_nl_1.npy')
 para_nonlinear_2 = np.load('gp_025_para_nl_2.npy')
-para_lorenz_1 =np.load('gp_025_para_lorenz_1.npy')
-para_lorenz_2 =np.load('gp_025_para_lorenz_2.npy')
-para_lorenz_3 =np.load('gp_025_para_lorenz_3.npy')
+para_lorenz_1 =np.load('gp_025_para_lr_1.npy')
+para_lorenz_2 =np.load('gp_025_para_lr_2.npy')
+para_lorenz_3 =np.load('gp_025_para_lr_3.npy')
 # finds the hyperparameters for two_compart
 T, Y_tc = create_data_twocompart(p=0.25)
 Y_compart = []
